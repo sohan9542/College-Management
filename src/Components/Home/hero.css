@@ -1,0 +1,21 @@
+.hero{
+    background: url('../../Image//rpi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(29, 26, 26, 0.8);
+}
+.hero-texts{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
