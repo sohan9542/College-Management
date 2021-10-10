@@ -16,6 +16,8 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
+import React from 'react'
+import { RapperContent } from '../App'
 
 const solutions = [
     {
@@ -59,42 +61,42 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+    const { setAuthopen } = React.useContext(RapperContent)
     return (
-        
+
         <Popover className=" bg-white fixed top-0 left-0 z-40 w-full">
             <div className="bg-first text-white w-full py-2 hidden lg:block ">
-            <div className="mx-7 flex gap-4 items-center justify-between">
-                <div className="flex items-center text-xs">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                    </svg> sopura, rajshahi, bd
+                <div className="mx-7 flex gap-4 items-center justify-between">
+                    <div className="flex items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg> sopura, rajshahi, bd
+                    </div>
+                    <div className="flex items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            <path d="M16.707 3.293a1 1 0 010 1.414L15.414 6l1.293 1.293a1 1 0 01-1.414 1.414L14 7.414l-1.293 1.293a1 1 0 11-1.414-1.414L12.586 6l-1.293-1.293a1 1 0 011.414-1.414L14 4.586l1.293-1.293a1 1 0 011.414 0z" />
+                        </svg> +19 123-456-7890
+                    </div>
+                    <div className="flex items-center text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>  mail@yourdomain.com
+                    </div>
                 </div>
-                <div className="flex items-center text-xs">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                        <path d="M16.707 3.293a1 1 0 010 1.414L15.414 6l1.293 1.293a1 1 0 01-1.414 1.414L14 7.414l-1.293 1.293a1 1 0 11-1.414-1.414L12.586 6l-1.293-1.293a1 1 0 011.414-1.414L14 4.586l1.293-1.293a1 1 0 011.414 0z" />
-                    </svg> +19 123-456-7890
-                </div>
-                <div className="flex items-center text-xs">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                    </svg>  mail@yourdomain.com
-                </div>
+
             </div>
-          
-        </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 lg:h-30 ">
                 <div className="flex justify-between items-center md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <Link href="#">
-                            <span className="sr-only">Workflow</span>
+                        <Link to="/">
                             <img
-                                className="w-40 h-20" style={{objectFit:'cover'}}
+                                className="w-40 h-20" style={{ objectFit: 'cover' }}
                                 src="https://i.ibb.co/RvhZ4X2/Rajshahi-Polytechnic-Institute.png"
                                 alt=""
                             />
-                         
+
                         </Link>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
@@ -104,7 +106,7 @@ export default function Navbar() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                        <Link href="#" className="text-base font-medium text-ash hover:text-second">
+                        <Link to="/" className="text-base font-medium text-ash hover:text-second">
                             Home
                         </Link>
                         <Popover className="relative">
@@ -142,12 +144,12 @@ export default function Navbar() {
                                                     {solutions.map((item) => (
                                                         <Link
                                                             key={item.name}
-                                                           
+
                                                             className="-m-3 p-3 flex relative z-30 items-start rounded-lg hover:bg-gray-50"
                                                         >
                                                             <item.icon className="flex-shrink-0 h-6 w-6 text-ash" aria-hidden="true" />
                                                             <div className="ml-4">
-                                                                <Link to={"/department/" + item.name} className="text-base font-medium text-ash hover:text-second hover:ml ">{item.name}</Link>
+                                                                <Link to={"/" + item.name + "/notice"} className="text-base font-medium text-ash hover:text-second hover:ml ">{item.name}</Link>
                                                             </div>
                                                         </Link>
                                                     ))}
@@ -162,10 +164,10 @@ export default function Navbar() {
 
                     </Popover.Group>
                     <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                        <Link href="#" className="whitespace-nowrap bg-second text-base px-4 py-2 rounded-sm font-medium text-white">
-                           LOGIN
+                        <Link onClick={() => setAuthopen(true)} className="whitespace-nowrap bg-second text-base px-4 py-2 rounded-sm font-medium text-white">
+                            LOGIN
                         </Link>
-                       
+
                     </div>
                 </div>
             </div>
@@ -183,13 +185,13 @@ export default function Navbar() {
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                         <div className="pt-5 pb-6 px-5">
                             <div className="flex items-center justify-between">
-                                <div>
-                                    <img
-                                        className="h-20 w-auto" style={{objectFit:'cover'}}
-                                        src="https://i.ibb.co/RvhZ4X2/Rajshahi-Polytechnic-Institute.png"
-                                        alt="Workflow"
-                                    />
-                                </div>
+
+                                <Link to="/"> <img
+                                    className="h-20 w-auto" style={{ objectFit: 'cover' }}
+                                    src="https://i.ibb.co/RvhZ4X2/Rajshahi-Polytechnic-Institute.png"
+                                    alt="Workflow"
+                                /></Link>
+
                                 <div className="-mr-2">
                                     <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                                         <span className="sr-only">Close menu</span>
@@ -216,7 +218,7 @@ export default function Navbar() {
                                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                                     Existing customer?{' '}
                                     <Link href="#" className="px-2 py-1 text-white bg-second">
-                                      LOGIN
+                                        LOGIN
                                     </Link>
                                 </p>
                             </div>

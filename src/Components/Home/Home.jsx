@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Departments from './Departments'
 import Featured from './Featured'
 import Hero from './Hero'
@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Hero />
             <Departments />
-            <Featured />
+            <Featured />       
             <Notice />
         </div>
     )

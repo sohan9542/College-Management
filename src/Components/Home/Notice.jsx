@@ -6,9 +6,9 @@ const Notice = () => {
             <div className="w-10/12 mx-auto">
                 <h2 className="text-ash text-2xl font-medium border-r-2 w-44 border-first pb-1">Teachers Post</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
-                    <div className="shadow-lg pb-8">
+                    <div className="shadow-lg pb-8" data-aos="fade-left">
                         <div className=" rounded overflow-hidden relative">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADe_fi-MA7iQSRE5JbQQ0cgX3V0ZTFf-5YqJ1E1-PKkpjyLmbcbDjAfqhRtFPIUX-Hoc&usqp=CAU" className="w-full mb-4" style={{ height: '100%', objectFit: 'cover' }} alt="" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADe_fi-MA7iQSRE5JbQQ0cgX3V0ZTFf-5YqJ1E1-PKkpjyLmbcbDjAfqhRtFPIUX-Hoc&usqp=CAU" className="w-full mb-4" style={{ height: '250px', objectFit: 'cover' }} alt="" />
                             <div className="w-52 bg-second text-white px-2 py-2 relative z-10 mx-auto rounded-full" style={{ marginTop: '-35px' }}>
                                 Posted on 24-01-2021
                             </div>
@@ -21,9 +21,9 @@ const Notice = () => {
                             </svg></button>
                         </div>
                     </div>
-                    <div className="shadow-lg pb-8">
+                    <div className="shadow-lg pb-8" data-aos="fade-up">
                         <div className=" rounded overflow-hidden relative">
-                            <img src="https://content.techgig.com/thumb/msid-78474367,width-860,resizemode-4/4-Expert-tips-to-up-your-game-as-a-programmer.jpg?58220" className="w-full mb-4" style={{ height: '100%', objectFit: 'cover' }} alt="" />
+                            <img src="https://content.techgig.com/thumb/msid-78474367,width-860,resizemode-4/4-Expert-tips-to-up-your-game-as-a-programmer.jpg?58220" className="w-full mb-4" style={{ height: '250px', objectFit: 'cover' }} alt="" />
                             <div className="w-52 bg-second text-white px-2 py-2 relative z-10 mx-auto rounded-full" style={{ marginTop: '-35px' }}>
                                 Posted on 24-01-2021
                             </div>
@@ -36,9 +36,9 @@ const Notice = () => {
                             </svg></button>
                         </div>
                     </div>
-                    <div className="shadow-lg pb-8">
+                    <div className="shadow-lg pb-8" data-aos="fade-right">
                         <div className=" rounded overflow-hidden relative">
-                            <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https://www.gcu.edu/sites/default/files/2020-09/programming.jpg" className="w-full mb-4" style={{ height: '100%', objectFit: 'cover' }} alt="" />
+                            <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces/https://www.gcu.edu/sites/default/files/2020-09/programming.jpg" className="w-full mb-4" style={{ height: '250px', objectFit: 'cover' }} alt="" />
                             <div className="w-52 bg-second text-white px-2 py-2 relative z-10 mx-auto rounded-full" style={{ marginTop: '-35px' }}>
                                 Posted on 24-01-2021
                             </div>

@@ -7,7 +7,15 @@ module.exports = {
       second:'#ff9c27',
       ash:'#53524d',
       white:'#fff',
-      third:'#fafafa'
+      third:'#fafafa',
+      wfirst:'#e0eaff',
+      wsecond:'#fef7da',
+      wpink:'#ffeaf0',
+      bfirst:'#6f9efe',
+      bsecond:'#fbe27d',
+      bthird:'#fe9cb8',
+      smooth:'#e5e7eb',
+      tcolor:'#927e87'
     },
     extend: {
       
